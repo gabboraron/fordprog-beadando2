@@ -23,11 +23,11 @@ Minden változót *`típus név ;`* alakban kell deklarálni, több azonos típu
 - `natural` típusú kifejezések: számkonstansok, natural típusú változók és az ezekből a `+` (összedás), `-` (kivonás), `*` (szorzás), `div` (egészosztás), `mod` (maradékképzés) infix operátorokkal és zárójelekkel felépített kifejezések.
 - `boolean` típusú kifejezések: `true` és `false`, `boolean` típusú változók, és két `natural` típusú kifejezésből az `=` (egyenlőség), `<` (kisebb), `>` (nagyobb) infix operátorral, valamint a boolean típusú kifejezésekből az `and` (konjunkció), `or` (diszjunkció), `=` (egyenlőség) *infix* és a `not` (negáció) *prefix* operátorral és zárójelekkel felépített kifejezések.
 - Az infix operátorok mind balasszociatívak és a precedenciájuk növevő sorrendben a következő:
-  -      `and` `or`
-  -      `=`
-  -     `<` `>`
-  -     `+` `-`
-  -     `*` `div` `mod`
+  - `and` `or`
+  - `=`
+  - `<` `>`
+  - `+` `-`
+  - `*` `div` `mod`
 
 bővebben: https://deva.web.elte.hu/pubwiki/doku.php?id=fordprog:while2019
 vagy: https://deva.web.elte.hu/pubwiki/doku.php?id=fordprog:bead2
