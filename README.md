@@ -29,5 +29,15 @@ Minden változót *`típus név ;`* alakban kell deklarálni, több azonos típu
   - `+` `-`
   - `*` `div` `mod`
 
+### Utasítások
+
+- `skip` utasítás: a változók értékeinek megváltoztatása nélküli továbblépés.
+- Értékadás: az `:=` operátorral. *Bal*oldalán egy változó, *jobb*oldalán egy - a változóéval megegyező típusú - kifejezés állhat.
+- Olvasás: A `read( `*`változó`*` );` utasítás a megadott változóba olvas be egy megfelelő típusú értéket a konzolról. (Megvalósítása: meg kell hívni a `be_egesz` (vagy a `be_logikai`) eljárást, amit a *4. beadandó leírásához mellékelt C fájl tartalmaz.* A beolvasott érték `natural` típus esetén az `eax`, `logikai` típus esetén az `al` regiszterben lesz.)
+- Írás: A `write( `*`kifejezés`*` );` utasítás a megadott kifejezés értékét a képernyőre írja (és egy sortöréssel fejezi be). (Megvalósítása: meg kell hívni a `ki_egesz` (vagy a `ki_logikai`) eljárást, amit a *4. beadandó* leírásához mellékelt C fájl tartalmaz. Paraméterként a kiírandó értéket (mindkét esetben 4 bájtot) kell a verembe tenni.)
+- While ciklus: `while `*`feltétel`*` do `*`utasítások`*` done` A *feltétel* logikai kifejezés, a *ciklusmag* legalább egy utasítást tartalmaz. A megszokott módon, elöltesztelős ciklusként működik.
+- Elágazás: `if `*`feltétel`*` then `*`utasítások`*` elseif `*`feltétel`*` then `*`utasítások`*` … else `*`utasítások`*` endif` alakú. A *feltételek* logikai kifejezések, az ágak legalább egy *utasítást* tartalmaznak. Elseif ágból akárhány lehet (akár nulla is), az else ágból legfeljebb egy lehet, de el is hagyható. Az elágazások a megszokott módon működnek.
+
+
 bővebben: https://deva.web.elte.hu/pubwiki/doku.php?id=fordprog:while2019
 vagy: https://deva.web.elte.hu/pubwiki/doku.php?id=fordprog:bead2
