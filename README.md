@@ -41,3 +41,9 @@ Minden változót *`típus név ;`* alakban kell deklarálni, több azonos típu
 
 bővebben: https://deva.web.elte.hu/pubwiki/doku.php?id=fordprog:while2019
 vagy: https://deva.web.elte.hu/pubwiki/doku.php?id=fordprog:bead2
+
+# Saját megoldás
+futtatás:
+`lex calculate.l`
+`bisonc++ calculate2.y`
+`g++ -o beadando calculate.cc lex.yy.cc parse.cc `
